@@ -1,0 +1,97 @@
+body {
+    overflow: hidden;
+    height: 100vh;
+}
+
+div#header {
+    text-align: center;
+    padding-top: 15px;
+}
+
+div#score-div {
+    display: inline-block;
+}
+
+div#score-div span {
+    height: 20px;
+    width: 20px;
+    margin-right: 5px;
+    display: inline-block;
+    position: relative;
+}
+
+span.lvl-1-score {
+    background: red;
+}
+
+span.lvl-1-score:before {
+    content: "2";
+    position: absolute;
+    bottom: -20px;
+    left: 7px;
+    font-size: 15px;
+}
+
+span.lvl-2-score {
+    background: green;
+}
+
+span.lvl-2-score:before {
+    content: "4";
+    position: absolute;
+    bottom: -20px;
+    left: 7px;
+    font-size: 15px;
+}
+
+label {
+    display: inline-block;
+    font-size: 20px;
+    margin-left: 100px;
+}
+
+.win, .lose {
+    position: absolute;
+    top: 10%;
+    text-align: center;
+    width: 100%;
+    font-size: 80px;
+    display: none;
+}
+
+
+.win h2 {
+    font-size: 100px;
+}
+
+.win h3 {
+    font-size: 60px;
+}
+
+.win h2 span, .win h3 span {
+    color: blue;
+    text-decoration: none;
+}
+
+.win h2 span:hover, .win h3 span:hover {
+    border-bottom: 3px solid blue;
+}
+
+div.lvl-1-circle {
+    background-color: red;
+}
+
+div.lvl-2-circle {
+    background-color: green;
+}
+
+div.lvl-2 {
+    display: none;
+}
+
+.circle {
+    position: absolute;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+}

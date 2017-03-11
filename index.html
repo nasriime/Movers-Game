@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>myGame</title>
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <div id="header">
+        <div id="score-div">
+            <span class="lvl-1-score circle"></span>
+            <span class="lvl-2-score circle"></span>
+        </div>
+        <label id="score">Your score : <span>0</span></label>
+        <label id="remaining">Circles left : <span>4</span></label>
+        <label id="clicks-remaining">Clicks remaining : <span>10</span></label>
+    </div>
+
+    <div class="lvl-1">
+        <div class="lvl-1-circle circle"></div>
+        <div class="lvl-1-circle circle"></div>
+        <div class="lvl-1-circle circle"></div>
+        <div class="lvl-1-circle circle"></div>
+        <div class="lvl-1-win win">
+          <h2>Good</h2>
+          <h3>Now you can start <span>Level 2</span></h3>
+        </div>
+    </div>
+
+    <div class="lvl-2">
+        <div class="lvl-2-circle circle"></div>
+        <div class="lvl-2-circle circle"></div>
+        <div class="lvl-2-circle circle"></div>
+        <div class="lvl-2-circle circle"></div>
+        <div class="lvl-1-win win">
+          <h2>Good</h2>
+          <h3>you finished the Game <a href="index.html">Restart</a></h3>
+        </div>
+    </div>
+
+    <h2 class="lose">Game Over <a href="index.html">Restart</a></h2>
+
+    <script src="https://code.jquery.com/jquery-3.1.1.js" integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA=" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
